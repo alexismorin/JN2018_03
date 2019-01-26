@@ -6,10 +6,16 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
+    2100002: lambert1
     2300000: //RootNode
     3300000: //RootNode
     4300000: GemSapphire
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 7389c9284bbb10e4ba9d611d13d95b6b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
