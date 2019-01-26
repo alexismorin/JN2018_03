@@ -1,62 +1,20 @@
 fileFormatVersion: 2
-guid: a67fc3a6ef147194aa8945ad9facdc11
+guid: e0739dde280b402489ddf454b9d63703
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Slime_Base
-    100002: Slime_Eye_Left
-    100004: Slime_Eye_Right
-    100006: Slime_Eyeball_Left
-    100008: Slime_Eyeball_Right
-    100010: Slime_Lashes_Left
-    100012: Slime_Lashes_Right
-    100014: //RootNode
-    100016: FK_Slime_01
-    100018: FK_Slime_02
-    100020: FK_Slime_03
-    100022: FK_Slime_End
-    100024: SM_Slime
-    400000: Slime_Base
-    400002: Slime_Eye_Left
-    400004: Slime_Eye_Right
-    400006: Slime_Eyeball_Left
-    400008: Slime_Eyeball_Right
-    400010: Slime_Lashes_Left
-    400012: Slime_Lashes_Right
-    400014: //RootNode
-    400016: FK_Slime_01
-    400018: FK_Slime_02
-    400020: FK_Slime_03
-    400022: FK_Slime_End
-    400024: SM_Slime
-    2100000: lambert1
-    2300000: Slime_Base
-    2300002: Slime_Eyeball_Left
-    2300004: Slime_Eyeball_Right
-    2300006: Slime_Lashes_Left
-    2300008: Slime_Lashes_Right
-    3300000: Slime_Base
-    3300002: Slime_Eyeball_Left
-    3300004: Slime_Eyeball_Right
-    3300006: Slime_Lashes_Left
-    3300008: Slime_Lashes_Right
-    4300000: Slime_Eyeball_Left
-    4300002: Slime_Lashes_Left
-    4300004: Slime_Eyeball_Right
-    4300006: Slime_Lashes_Right
-    4300008: Slime_Base
+    100000: //RootNode
+    100002: FK_Slime_01
+    100004: FK_Slime_02
+    100006: FK_Slime_03
+    100008: FK_Slime_End
+    400000: //RootNode
+    400002: FK_Slime_01
+    400004: FK_Slime_02
+    400006: FK_Slime_03
+    400008: FK_Slime_End
     9500000: //RootNode
-    13700000: Slime_Base
-    13700002: Slime_Eyeball_Left
-    13700004: Slime_Eyeball_Right
-    13700006: Slime_Lashes_Left
-    13700008: Slime_Lashes_Right
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 619ab5615f8b0b2488375004cc39e7ac, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -75,8 +33,8 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 1
-    animationCompression: 3
+    importConstraints: 0
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -133,7 +91,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

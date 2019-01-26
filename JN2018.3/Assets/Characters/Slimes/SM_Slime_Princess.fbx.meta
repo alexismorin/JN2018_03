@@ -12,6 +12,11 @@ ModelImporter:
     100012: Slime_Lashes_Left
     100014: Slime_Lashes_Right
     100016: //RootNode
+    100018: FK_Slime_01
+    100020: FK_Slime_02
+    100022: FK_Slime_03
+    100024: FK_Slime_End
+    100026: SM_Slime_Princess
     400000: Princess_Crown
     400002: Slime_Base
     400004: Slime_Eye_Left
@@ -21,6 +26,11 @@ ModelImporter:
     400012: Slime_Lashes_Left
     400014: Slime_Lashes_Right
     400016: //RootNode
+    400018: FK_Slime_01
+    400020: FK_Slime_02
+    400022: FK_Slime_03
+    400024: FK_Slime_End
+    400026: SM_Slime_Princess
     2100000: lambert1
     2100002: lambert2
     2300000: Princess_Crown
@@ -41,6 +51,13 @@ ModelImporter:
     4300006: Slime_Lashes_Right
     4300008: Slime_Base
     4300010: Princess_Crown
+    9500000: //RootNode
+    13700000: Princess_Crown
+    13700002: Slime_Base
+    13700004: Slime_Eyeball_Left
+    13700006: Slime_Eyeball_Right
+    13700008: Slime_Lashes_Left
+    13700010: Slime_Lashes_Right
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -71,7 +88,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -104,7 +121,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -131,7 +148,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
