@@ -56,10 +56,10 @@ public class Enemy : MonoBehaviour
             //rb.AddRelativeForce(Vector3.forward * 500.0f);
             
             // calculate force vector
-            var force = transform.position - collision.transform.position;
+            //var force = transform.position - collision.transform.position;
             // normalize force vector to get direction only and trim magnitude
-            force.Normalize();
-            rb.AddForce(force * smackAmplify);
+            //force.Normalize();
+            //rb.AddForce(force * smackAmplify);
             //This kills the knight
             StartCoroutine(DeathTimer());
         }
