@@ -35,6 +35,11 @@ ModelImporter:
     4300004: Slime_Eyeball_Right
     4300006: Slime_Lashes_Right
     4300008: Slime_Base
+    6400000: Slime_Base
+    6400002: Slime_Eyeball_Left
+    6400004: Slime_Eyeball_Right
+    6400006: Slime_Lashes_Left
+    6400008: Slime_Lashes_Right
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -73,7 +78,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 0.1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
