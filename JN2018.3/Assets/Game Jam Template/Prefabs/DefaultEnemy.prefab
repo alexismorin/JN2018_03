@@ -1,5 +1,11 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!4 &8749064229500480079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400014, guid: a67fc3a6ef147194aa8945ad9facdc11,
+    type: 3}
+  m_PrefabInstance: {fileID: 8749064229500612801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1547187766407705259
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +159,7 @@ MonoBehaviour:
   target: {fileID: 0}
   escapeTarget: {fileID: 0}
   gameController: {fileID: 0}
+  rig: {fileID: 0}
   audioPlayer: {fileID: 0}
   smackScream: []
 --- !u!82 &4459884908104928006
@@ -251,12 +258,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &8749064229500480079 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400014, guid: a67fc3a6ef147194aa8945ad9facdc11,
-    type: 3}
-  m_PrefabInstance: {fileID: 8749064229500612801}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8749064229500612801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,5 +325,9 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: a67fc3a6ef147194aa8945ad9facdc11, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b0c637b0cbde4a4aa7266242e72f667, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a67fc3a6ef147194aa8945ad9facdc11, type: 3}

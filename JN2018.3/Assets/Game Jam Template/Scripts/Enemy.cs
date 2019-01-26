@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour {
     public Transform target;
     public Transform escapeTarget;
     public GameObject gameController;
+    public Animator rig;
     public AudioSource audioPlayer;
     public AudioClip[] smackScream;
     //public GameObject loot;
@@ -51,6 +52,7 @@ public class Enemy : MonoBehaviour {
 
             rb.AddForce (collision.contacts[0].normal * smackAmplify);
             audioPlayer.PlayOneShot (smackScream[Random.Range (0, smackScream.Length)], 1f);
+            rig.SetTrigger ("die");
 
             StartCoroutine (DeathTimer ());
         }
