@@ -163,6 +163,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3f007c00ad69ed3459a47ecf1b81ae42, type: 3}
   - {fileID: 8300000, guid: f892a5861ecdfcd42ae6715214048d74, type: 3}
   - {fileID: 8300000, guid: 83054c55847300b4b81e757b697031d7, type: 3}
+  - {fileID: 8300000, guid: a0ec90383efdb474695efaa7e7e4f060, type: 3}
+  - {fileID: 8300000, guid: a61f8fa7523e61a42a7385115b434595, type: 3}
+  - {fileID: 8300000, guid: 6886a972a72f8d24ab8c2f219473adec, type: 3}
+  - {fileID: 8300000, guid: 5ba57dd357b55e1488df2d9f6d58c21c, type: 3}
+  - {fileID: 8300000, guid: 5bca1877bab127148b180131eb65d28b, type: 3}
+  - {fileID: 8300000, guid: 10dcca6bbf564954d976921f4cbaf8d5, type: 3}
+  - {fileID: 8300000, guid: cdf1be9fa81be454d88b1377731e12b6, type: 3}
   aiController: {fileID: 2869229785365737271}
 --- !u!195 &2869229785365737271
 NavMeshAgent:
@@ -204,7 +211,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 90
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
