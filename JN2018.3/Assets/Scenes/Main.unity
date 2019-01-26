@@ -1696,6 +1696,10 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 404263480}
+    - target: {fileID: 1165299996, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
 --- !u!1001 &9115115278438674963
