@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 7762bc9c9ae980f40acac4be26736192
+guid: b07ac29e280797b43a8ab28e806f0465
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Slime_Base
-    100002: Slime_Eye_Left
-    100004: Slime_Eye_Right
-    100006: Slime_Eyeball_Left
-    100008: Slime_Eyeball_Right
-    100010: Slime_Lashes_Left
-    100012: Slime_Lashes_Right
-    100014: //RootNode
+    100002: Slime_Eye_Left_Slime_Lashes_Left
+    100004: Slime_Eye_Right_Slime_Lashes_Right
+    100006: Slime_Eyeball_Left_Slime_Eye_Left
+    100008: Slime_Eyeball_Right_Slime_Eye_Right
+    100010: //RootNode
     400000: Slime_Base
-    400002: Slime_Eye_Left
-    400004: Slime_Eye_Right
-    400006: Slime_Eyeball_Left
-    400008: Slime_Eyeball_Right
-    400010: Slime_Lashes_Left
-    400012: Slime_Lashes_Right
-    400014: //RootNode
-    2100000: lambert1
+    400002: Slime_Eye_Left_Slime_Lashes_Left
+    400004: Slime_Eye_Right_Slime_Lashes_Right
+    400006: Slime_Eyeball_Left_Slime_Eye_Left
+    400008: Slime_Eyeball_Right_Slime_Eye_Right
+    400010: //RootNode
+    2100000: Slime_BaseMat
+    2100002: Slime_Eye_Left_Slime_Lashes_LeftMat
+    2100004: Slime_Eye_Right_Slime_Lashes_RightMat
+    2100006: Slime_Eyeball_Left_Slime_Eye_LeftMat
+    2100008: Slime_Eyeball_Right_Slime_Eye_RightMat
     2300000: Slime_Base
-    2300002: Slime_Eyeball_Left
-    2300004: Slime_Eyeball_Right
-    2300006: Slime_Lashes_Left
-    2300008: Slime_Lashes_Right
+    2300002: Slime_Eye_Left_Slime_Lashes_Left
+    2300004: Slime_Eye_Right_Slime_Lashes_Right
+    2300006: Slime_Eyeball_Left_Slime_Eye_Left
+    2300008: Slime_Eyeball_Right_Slime_Eye_Right
     3300000: Slime_Base
-    3300002: Slime_Eyeball_Left
-    3300004: Slime_Eyeball_Right
-    3300006: Slime_Lashes_Left
-    3300008: Slime_Lashes_Right
-    4300000: Slime_Eyeball_Left
-    4300002: Slime_Lashes_Left
-    4300004: Slime_Eyeball_Right
-    4300006: Slime_Lashes_Right
-    4300008: Slime_Base
+    3300002: Slime_Eye_Left_Slime_Lashes_Left
+    3300004: Slime_Eye_Right_Slime_Lashes_Right
+    3300006: Slime_Eyeball_Left_Slime_Eye_Left
+    3300008: Slime_Eyeball_Right_Slime_Eye_Right
+    4300000: Slime_Base
+    4300002: Slime_Eye_Left_Slime_Lashes_Left
+    4300004: Slime_Eye_Right_Slime_Lashes_Right
+    4300006: Slime_Eyeball_Left_Slime_Eye_Left
+    4300008: Slime_Eyeball_Right_Slime_Eye_Right
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -66,7 +66,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
