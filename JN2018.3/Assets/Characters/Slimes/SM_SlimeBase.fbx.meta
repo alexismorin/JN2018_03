@@ -45,6 +45,12 @@ ModelImporter:
     4300004: Slime_Eyeball_Right
     4300006: Slime_Lashes_Right
     4300008: Slime_Base
+    9500000: //RootNode
+    13700000: Slime_Base
+    13700002: Slime_Eyeball_Left
+    13700004: Slime_Eyeball_Right
+    13700006: Slime_Lashes_Left
+    13700008: Slime_Lashes_Right
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -69,8 +75,8 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
-    animationCompression: 1
+    importConstraints: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -103,7 +109,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -127,10 +133,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
