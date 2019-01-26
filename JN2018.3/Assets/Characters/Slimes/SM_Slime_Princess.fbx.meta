@@ -1,59 +1,52 @@
 fileFormatVersion: 2
-guid: 7de2f4183bdbf8245be3a045a10a1ebb
+guid: cb78f610b0377a04f864870b481c5d05
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Gear_Knight
-    100002: Knight_Helmet
-    100004: Knight_Spear
-    100006: Slime_Base
-    100008: Slime_Eye_Left
-    100010: Slime_Eye_Right
-    100012: Slime_Eyeball_Left
-    100014: Slime_Eyeball_Right
-    100016: Slime_Lashes_Left
-    100018: Slime_Lashes_Right
-    100020: //RootNode
-    400000: Gear_Knight
-    400002: Knight_Helmet
-    400004: Knight_Spear
-    400006: Slime_Base
-    400008: Slime_Eye_Left
-    400010: Slime_Eye_Right
-    400012: Slime_Eyeball_Left
-    400014: Slime_Eyeball_Right
-    400016: Slime_Lashes_Left
-    400018: Slime_Lashes_Right
-    400020: //RootNode
+    100000: Princess_Crown
+    100002: Slime_Base
+    100004: Slime_Eye_Left
+    100006: Slime_Eye_Right
+    100008: Slime_Eyeball_Left
+    100010: Slime_Eyeball_Right
+    100012: Slime_Lashes_Left
+    100014: Slime_Lashes_Right
+    100016: //RootNode
+    400000: Princess_Crown
+    400002: Slime_Base
+    400004: Slime_Eye_Left
+    400006: Slime_Eye_Right
+    400008: Slime_Eyeball_Left
+    400010: Slime_Eyeball_Right
+    400012: Slime_Lashes_Left
+    400014: Slime_Lashes_Right
+    400016: //RootNode
     2100000: lambert1
     2100002: lambert2
-    2300000: Knight_Helmet
-    2300002: Knight_Spear
-    2300004: Slime_Base
-    2300006: Slime_Eyeball_Left
-    2300008: Slime_Eyeball_Right
-    2300010: Slime_Lashes_Left
-    2300012: Slime_Lashes_Right
-    3300000: Knight_Helmet
-    3300002: Knight_Spear
-    3300004: Slime_Base
-    3300006: Slime_Eyeball_Left
-    3300008: Slime_Eyeball_Right
-    3300010: Slime_Lashes_Left
-    3300012: Slime_Lashes_Right
+    2300000: Princess_Crown
+    2300002: Slime_Base
+    2300004: Slime_Eyeball_Left
+    2300006: Slime_Eyeball_Right
+    2300008: Slime_Lashes_Left
+    2300010: Slime_Lashes_Right
+    3300000: Princess_Crown
+    3300002: Slime_Base
+    3300004: Slime_Eyeball_Left
+    3300006: Slime_Eyeball_Right
+    3300008: Slime_Lashes_Left
+    3300010: Slime_Lashes_Right
     4300000: Slime_Eyeball_Left
     4300002: Slime_Lashes_Left
     4300004: Slime_Eyeball_Right
     4300006: Slime_Lashes_Right
     4300008: Slime_Base
-    4300010: Knight_Spear
-    4300012: Knight_Helmet
+    4300010: Princess_Crown
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 619ab5615f8b0b2488375004cc39e7ac, type: 2}
+    second: {fileID: 2100000, guid: 3aac9bea2ceeaed49b4b53bf46c4841e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
