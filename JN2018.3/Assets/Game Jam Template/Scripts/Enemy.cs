@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour {
     public Rigidbody rb;
@@ -16,10 +17,12 @@ public class Enemy : MonoBehaviour {
     public Transform target;
     public Transform escapeTarget;
     public GameObject gameController;
+    public GameObject loot;
+
     public Animator rig;
     public AudioSource audioPlayer;
     public AudioClip[] smackScream;
-    //public GameObject loot;
+    public NavMeshAgent aiController;
 
     // Start is called before the first frame update
     void Start () {
@@ -27,17 +30,18 @@ public class Enemy : MonoBehaviour {
         target = GameObject.FindWithTag ("TargetZone").transform;
         escapeTarget = GameObject.FindWithTag ("EscapeZone").transform;
         gameController = GameObject.FindWithTag ("GameController");
+        aiController.destination = target.position;
     }
 
     // Update is called once per frame
     void Update () {
-        if (!hasLoot) {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards (transform.position, target.position, step);
-        } else {
-            float step = escapeSpeed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards (transform.position, escapeTarget.position, step);
-        }
+        /*    if (!hasLoot) {
+                float step = speed * Time.deltaTime;
+                transform.position = Vector3.MoveTowards (transform.position, target.position, step);
+            } else {
+                float step = escapeSpeed * Time.deltaTime;
+                transform.position = Vector3.MoveTowards (transform.position, escapeTarget.position, step);
+            }*/
     }
 
     void OnCollisionEnter (Collision collision) {
@@ -49,6 +53,8 @@ public class Enemy : MonoBehaviour {
             print ("SMACK");
 
             DropLoot ();
+
+            Destroy (aiController);
 
             rb.AddForce (collision.contacts[0].normal * smackAmplify);
             audioPlayer.PlayOneShot (smackScream[Random.Range (0, smackScream.Length)], 1f);
@@ -66,6 +72,7 @@ public class Enemy : MonoBehaviour {
             //Steal loot
             hasLoot = true;
             gameController.GetComponent<GameController> ().LootChange (-lootSteal);
+            aiController.destination = escapeTarget.position;
         }
         //Escapes with loot
         else if (other.gameObject.tag == "EscapeZone" && hasLoot) {
@@ -79,7 +86,8 @@ public class Enemy : MonoBehaviour {
 
     public void DropLoot () {
         //Instantiate loot at current position.
-        //Instantiate(loot, gameObject.transform.position, Quaternion.identity);
+        GameObject droppedLoot = Instantiate(loot, gameObject.transform.position, Quaternion.identity);
+        droppedLoot.GetComponent<Loot>().lootValue = lootSteal;
         hasLoot = false;
     }
 
