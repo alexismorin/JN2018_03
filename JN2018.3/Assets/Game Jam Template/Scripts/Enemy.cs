@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public Rigidbody rb;
     public int timeToDeath = 3;
     public int smackForce = 10;
+    public float smackAmplify = 500.0f;
 
     public float speed = 1.0f;
     public float escapeSpeed = 2.0f;
@@ -51,9 +52,19 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "PlayerCollider" && collision.relativeVelocity.magnitude > smackForce)
         {
             print("SMACK");
-            rb.AddRelativeForce(Vector3.forward * 500.0f);
+            
+            //rb.AddRelativeForce(Vector3.forward * 500.0f);
+            
+            // calculate force vector
+            var force = transform.position - collision.transform.position;
+            // normalize force vector to get direction only and trim magnitude
+            force.Normalize();
+            rb.AddForce(force * smackAmplify);
+            //This kills the knight
             StartCoroutine(DeathTimer());
         }
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
