@@ -8,6 +8,7 @@ TagManager:
   - PlayerCollider
   - TargetZone
   - EscapeZone
+  - KillZone
   layers:
   - Default
   - TransparentFX

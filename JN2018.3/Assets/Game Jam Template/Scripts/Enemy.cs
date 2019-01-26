@@ -84,6 +84,10 @@ public class Enemy : MonoBehaviour
             //Escape
             Destroy(gameObject);
         }
+        else if (other.gameObject.tag == "KillZone")
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator DeathTimer()
