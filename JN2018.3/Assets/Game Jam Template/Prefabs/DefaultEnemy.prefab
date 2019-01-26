@@ -143,8 +143,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   timeToDeath: 3
   smackForce: 10
-  speed: 1
-  escapeSpeed: 2
+  speed: 3
+  escapeSpeed: 4
   goldSteal: 5
   hasGold: 0
   target: {fileID: 0}
