@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 position = new Vector3(spawnCentre.transform.position.x + Random.Range(-5.0f, 5.0f), spawnCentre.transform.position.y, spawnCentre.transform.position.z + Random.Range(-5.0f, 5.0f));
         Instantiate(enemy, position, Quaternion.identity);
-        print("spawn at " + position);
+        //print("spawn at " + position);
 
 
 
