@@ -52,7 +52,10 @@ public class Enemy : MonoBehaviour {
         if (collision.gameObject.tag == "PlayerCollider" && collision.relativeVelocity.magnitude > smackForce) {
             print ("SMACK");
 
-            DropLoot ();
+            if (hasLoot)
+            {
+                DropLoot();
+            }
 
             Destroy (aiController);
 
