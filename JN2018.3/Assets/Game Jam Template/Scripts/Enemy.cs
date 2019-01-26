@@ -5,18 +5,19 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Rigidbody rb;
-    public int timeToDeath = 3;
+    public int timeToDeath = 1;
     public int smackForce = 10;
     public float smackAmplify = 500.0f;
 
     public float speed = 1.0f;
     public float escapeSpeed = 2.0f;
-    public int goldSteal = 5;
-    public bool hasGold = false;
+    public int lootSteal = 5;
+    public bool hasLoot = false;
 
     public Transform target;
     public Transform escapeTarget;
     public GameObject gameController;
+    //public GameObject loot;
 
 
     // Start is called before the first frame update
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!hasGold)
+        if (!hasLoot)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
@@ -52,14 +53,15 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "PlayerCollider" && collision.relativeVelocity.magnitude > smackForce)
         {
             print("SMACK");
-            
+
+            DropLoot();
+
             //rb.AddRelativeForce(Vector3.forward * 500.0f);
             
-            // calculate force vector
             //var force = transform.position - collision.transform.position;
-            // normalize force vector to get direction only and trim magnitude
             //force.Normalize();
             //rb.AddForce(force * smackAmplify);
+
             //This kills the knight
             StartCoroutine(DeathTimer());
         }
@@ -69,16 +71,16 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Reaches gold
+        //Reaches loot
         if (other.gameObject.tag == "TargetZone")
         {
-            print("stealin yer gold!");
-            //Steal gold
-            hasGold = true;
-            gameController.GetComponent<GameController>().LoseGold(goldSteal);
+            print("stealin yer loot!");
+            //Steal loot
+            hasLoot = true;
+            gameController.GetComponent<GameController>().LootChange(-lootSteal);
         }
-        //Escapes with gold
-        else if (other.gameObject.tag == "EscapeZone" && hasGold)
+        //Escapes with loot
+        else if (other.gameObject.tag == "EscapeZone" && hasLoot)
         {
             print("I escaped!");
             //Escape
@@ -89,6 +91,14 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void DropLoot()
+    {
+        //Instantiate loot at current position.
+        //Instantiate(loot, gameObject.transform.position, Quaternion.identity);
+        hasLoot = false;
+    }
+
 
     IEnumerator DeathTimer()
     {

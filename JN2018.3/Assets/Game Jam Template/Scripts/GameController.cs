@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 
-    public int startingGold = 100;
-    public int gold;
+    public int startingLoot = 100;
+    public int loot;
 
     // Start is called before the first frame update
     void Start()
     {
-        gold = startingGold;
+        loot = startingLoot;
     }
 
     // Update is called once per frame
@@ -25,8 +25,8 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void LoseGold(int loss)
+    public void LootChange(int change)
     {
-        gold = gold - loss;
+        loot = loot + change;
     }
 }
