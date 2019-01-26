@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour {
     public Rigidbody rb;
@@ -19,6 +20,7 @@ public class Enemy : MonoBehaviour {
     public Animator rig;
     public AudioSource audioPlayer;
     public AudioClip[] smackScream;
+    public NavMeshAgent aiController;
     //public GameObject loot;
 
     // Start is called before the first frame update
@@ -27,17 +29,18 @@ public class Enemy : MonoBehaviour {
         target = GameObject.FindWithTag ("TargetZone").transform;
         escapeTarget = GameObject.FindWithTag ("EscapeZone").transform;
         gameController = GameObject.FindWithTag ("GameController");
+        aiController.destination = target.position;
     }
 
     // Update is called once per frame
     void Update () {
-        if (!hasLoot) {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards (transform.position, target.position, step);
-        } else {
-            float step = escapeSpeed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards (transform.position, escapeTarget.position, step);
-        }
+        /*    if (!hasLoot) {
+                float step = speed * Time.deltaTime;
+                transform.position = Vector3.MoveTowards (transform.position, target.position, step);
+            } else {
+                float step = escapeSpeed * Time.deltaTime;
+                transform.position = Vector3.MoveTowards (transform.position, escapeTarget.position, step);
+            }*/
     }
 
     void OnCollisionEnter (Collision collision) {
@@ -49,6 +52,8 @@ public class Enemy : MonoBehaviour {
             print ("SMACK");
 
             DropLoot ();
+
+            Destroy (aiController);
 
             rb.AddForce (collision.contacts[0].normal * smackAmplify);
             audioPlayer.PlayOneShot (smackScream[Random.Range (0, smackScream.Length)], 1f);
@@ -66,6 +71,7 @@ public class Enemy : MonoBehaviour {
             //Steal loot
             hasLoot = true;
             gameController.GetComponent<GameController> ().LootChange (-lootSteal);
+            aiController.destination = escapeTarget.position;
         }
         //Escapes with loot
         else if (other.gameObject.tag == "EscapeZone" && hasLoot) {
