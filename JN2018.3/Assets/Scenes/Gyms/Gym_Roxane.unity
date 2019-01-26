@@ -221,6 +221,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: 0.3731334
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 7de2f4183bdbf8245be3a045a10a1ebb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b0c637b0cbde4a4aa7266242e72f667, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de2f4183bdbf8245be3a045a10a1ebb, type: 3}
 --- !u!1001 &285850252
@@ -497,6 +501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Slime_Princess
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: cb78f610b0377a04f864870b481c5d05, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b0c637b0cbde4a4aa7266242e72f667, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb78f610b0377a04f864870b481c5d05, type: 3}
 --- !u!1001 &754658542
@@ -732,6 +740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_SlimeBase
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: a67fc3a6ef147194aa8945ad9facdc11, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b0c637b0cbde4a4aa7266242e72f667, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a67fc3a6ef147194aa8945ad9facdc11, type: 3}
 --- !u!1 &951271376
