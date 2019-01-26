@@ -160,6 +160,7 @@ MonoBehaviour:
   target: {fileID: 0}
   escapeTarget: {fileID: 0}
   gameController: {fileID: 0}
+  loot: {fileID: 9167258195716223921, guid: 5b21646e6d3ba0847845ea8b58188b26, type: 3}
   rig: {fileID: 0}
   audioPlayer: {fileID: 4459884908104928006}
   smackScream:

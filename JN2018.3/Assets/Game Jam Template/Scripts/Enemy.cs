@@ -17,11 +17,12 @@ public class Enemy : MonoBehaviour {
     public Transform target;
     public Transform escapeTarget;
     public GameObject gameController;
+    public GameObject loot;
+
     public Animator rig;
     public AudioSource audioPlayer;
     public AudioClip[] smackScream;
     public NavMeshAgent aiController;
-    //public GameObject loot;
 
     // Start is called before the first frame update
     void Start () {
@@ -85,7 +86,8 @@ public class Enemy : MonoBehaviour {
 
     public void DropLoot () {
         //Instantiate loot at current position.
-        //Instantiate(loot, gameObject.transform.position, Quaternion.identity);
+        GameObject droppedLoot = Instantiate(loot, gameObject.transform.position, Quaternion.identity);
+        droppedLoot.GetComponent<Loot>().lootValue = lootSteal;
         hasLoot = false;
     }
 
