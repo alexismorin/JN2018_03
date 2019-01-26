@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+
+    public int startingGold = 100;
+    public int gold;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gold = startingGold;
     }
 
     // Update is called once per frame
@@ -19,5 +23,10 @@ public class GameController : MonoBehaviour
             //Goes Back to Main Menu
             SceneManager.LoadScene(0);
         }
+    }
+
+    public void LoseGold(int loss)
+    {
+        gold = gold - loss;
     }
 }

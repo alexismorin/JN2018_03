@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     public Transform target;
     public Transform escapeTarget;
+    public GameObject gameController;
 
 
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         target = GameObject.FindWithTag("TargetZone").transform;
         escapeTarget = GameObject.FindWithTag("EscapeZone").transform;
+        gameController = GameObject.FindWithTag("GameController");
     }
 
     // Update is called once per frame
@@ -62,6 +64,7 @@ public class Enemy : MonoBehaviour
             print("stealin yer gold!");
             //Steal gold
             hasGold = true;
+            gameController.GetComponent<GameController>().LoseGold(goldSteal);
         }
         //Escapes with gold
         else if (other.gameObject.tag == "EscapeZone" && hasGold)
