@@ -14,6 +14,11 @@ ModelImporter:
     100016: Slime_Lashes_Left
     100018: Slime_Lashes_Right
     100020: //RootNode
+    100022: FK_Slime_01
+    100024: FK_Slime_02
+    100026: FK_Slime_03
+    100028: FK_Slime_End
+    100030: SM_Slime_Knight
     400000: Gear_Knight
     400002: Knight_Helmet
     400004: Knight_Spear
@@ -25,6 +30,11 @@ ModelImporter:
     400016: Slime_Lashes_Left
     400018: Slime_Lashes_Right
     400020: //RootNode
+    400022: FK_Slime_01
+    400024: FK_Slime_02
+    400026: FK_Slime_03
+    400028: FK_Slime_End
+    400030: SM_Slime_Knight
     2100000: lambert1
     2100002: lambert2
     2300000: Knight_Helmet
@@ -48,6 +58,14 @@ ModelImporter:
     4300008: Slime_Base
     4300010: Knight_Spear
     4300012: Knight_Helmet
+    9500000: //RootNode
+    13700000: Knight_Helmet
+    13700002: Knight_Spear
+    13700004: Slime_Base
+    13700006: Slime_Eyeball_Left
+    13700008: Slime_Eyeball_Right
+    13700010: Slime_Lashes_Left
+    13700012: Slime_Lashes_Right
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -78,7 +96,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -111,7 +129,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -135,10 +153,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
