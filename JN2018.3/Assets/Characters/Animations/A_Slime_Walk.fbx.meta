@@ -8,12 +8,40 @@ ModelImporter:
     100004: FK_Slime_02
     100006: FK_Slime_03
     100008: FK_Slime_End
+    100010: Slime_Base
+    100012: Slime_Eye_Left
+    100014: Slime_Eye_Right
+    100016: Slime_Eyeball_Left
+    100018: Slime_Eyeball_Right
+    100020: Slime_Lashes_Left
+    100022: Slime_Lashes_Right
+    100024: SM_Slime
     400000: //RootNode
     400002: FK_Slime_01
     400004: FK_Slime_02
     400006: FK_Slime_03
     400008: FK_Slime_End
+    400010: Slime_Base
+    400012: Slime_Eye_Left
+    400014: Slime_Eye_Right
+    400016: Slime_Eyeball_Left
+    400018: Slime_Eyeball_Right
+    400020: Slime_Lashes_Left
+    400022: Slime_Lashes_Right
+    400024: SM_Slime
+    2100000: lambert1
+    4300000: Slime_Eyeball_Left
+    4300002: Slime_Lashes_Left
+    4300004: Slime_Eyeball_Right
+    4300006: Slime_Lashes_Right
+    4300008: Slime_Base
+    7400000: Take 001
     9500000: //RootNode
+    13700000: Slime_Base
+    13700002: Slime_Eyeball_Left
+    13700004: Slime_Eyeball_Right
+    13700006: Slime_Lashes_Left
+    13700008: Slime_Lashes_Right
   externalObjects: {}
   materials:
     importMaterials: 1
