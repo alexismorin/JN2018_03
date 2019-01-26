@@ -58,6 +58,8 @@ ModelImporter:
     400050: hands_r_hand
     400052: //RootNode
     2100000: lambert3
+    2300000: hands_r_hand
+    3300000: hands_r_hand
     4300000: hands_r_hand
     9500000: //RootNode
     13700000: hands_r_hand
