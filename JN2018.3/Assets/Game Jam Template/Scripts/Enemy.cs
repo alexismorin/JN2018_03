@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour {
     public Transform target;
     public Transform escapeTarget;
     public GameObject gameController;
+    public AudioSource audioPlayer;
+    public AudioClip[] smackScream;
     //public GameObject loot;
 
     // Start is called before the first frame update
@@ -48,6 +50,7 @@ public class Enemy : MonoBehaviour {
             DropLoot ();
 
             rb.AddForce (collision.contacts[0].normal * smackAmplify);
+            audioPlayer.PlayOneShot (smackScream[Random.Range (0, smackScream.Length)], 1f);
 
             StartCoroutine (DeathTimer ());
         }
