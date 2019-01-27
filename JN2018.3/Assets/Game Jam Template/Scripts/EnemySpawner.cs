@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
     //Variables
     public GameObject enemy;
     public GameObject spawnCentre;
+    public GameObject escapeTarget;
     public float spawnTimeMin = 5.0f;
     public float spawnTimeMax = 10.0f;
 
@@ -25,7 +26,8 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         Vector3 position = new Vector3(spawnCentre.transform.position.x + Random.Range(-5.0f, 5.0f), spawnCentre.transform.position.y, spawnCentre.transform.position.z + Random.Range(-5.0f, 5.0f));
-        Instantiate(enemy, position, Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, position, Quaternion.identity);
+        newEnemy.GetComponent<Enemy>().escapeTarget = escapeTarget.transform;
         //print("spawn at " + position);
 
 

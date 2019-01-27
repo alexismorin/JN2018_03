@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
     void Start () {
         rb = GetComponent<Rigidbody> ();
         target = GameObject.FindWithTag ("TargetZone").transform;
-        escapeTarget = GameObject.FindWithTag ("EscapeZone").transform;
+        //escapeTarget = GameObject.FindWithTag ("EscapeZone").transform;
         gameController = GameObject.FindWithTag ("GameController");
         aiController.destination = target.position;
     }

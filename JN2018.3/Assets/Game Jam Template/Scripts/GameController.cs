@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour
         //print("timer up");
         //set timer UI
         secondsCount += Time.deltaTime;
-        timerText.text = hourCount + "h:" + minuteCount + "m:" + (int)secondsCount + "s";
+        
         if (secondsCount >= 60)
         {
             minuteCount++;
