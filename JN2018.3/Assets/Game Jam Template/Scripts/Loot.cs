@@ -8,10 +8,14 @@ public class Loot : MonoBehaviour
     public GameObject gameController;
     public int lootValue = 0;
 
+    public AudioClip collect;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         gameController = GameObject.FindWithTag("GameController");
+        
     }
 
     // Update is called once per frame
@@ -30,6 +34,7 @@ public class Loot : MonoBehaviour
         {
             print("Loot returned");
 
+            audioSource.PlayOneShot(collect,1.0f);
             gameController.GetComponent<GameController>().LootChange(lootValue);
 
             Destroy(gameObject);
