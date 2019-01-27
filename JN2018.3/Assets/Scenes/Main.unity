@@ -1753,12 +1753,12 @@ PrefabInstance:
     - target: {fileID: 9115115279163748704, guid: d339807d91edd6843859653a2f80cc3d,
         type: 3}
       propertyPath: spawnTimeMin
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9115115279163748704, guid: d339807d91edd6843859653a2f80cc3d,
         type: 3}
       propertyPath: spawnTimeMax
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d339807d91edd6843859653a2f80cc3d, type: 3}
