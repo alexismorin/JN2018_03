@@ -63,9 +63,9 @@ public class Enemy : MonoBehaviour {
             audioPlayer.PlayOneShot (smackScream[Random.Range (0, smackScream.Length)], 1f);
             rig.SetTrigger ("die");
 
-            StartCoroutine (DeathTimer ());
+            gameController.GetComponent<GameController>().enemiesKilled += 1;
+            Destroy(gameObject, timeToDeath);
         }
-
     }
 
     private void OnTriggerEnter (Collider other) {
@@ -83,6 +83,7 @@ public class Enemy : MonoBehaviour {
             //Escape
             Destroy (gameObject);
         } else if (other.gameObject.tag == "KillZone") {
+            print(gameObject.name + " fell and died");
             gameController.GetComponent<GameController>().enemiesKilled += 1;
             Destroy (gameObject);
         }
@@ -90,14 +91,9 @@ public class Enemy : MonoBehaviour {
 
     public void DropLoot () {
         //Instantiate loot at current position.
+        print(gameObject.name + " dropped loot");
         GameObject droppedLoot = Instantiate(loot, gameObject.transform.position, Quaternion.identity);
         droppedLoot.GetComponent<Loot>().lootValue = lootSteal;
         hasLoot = false;
-    }
-
-    IEnumerator DeathTimer () {
-        yield return new WaitForSeconds (timeToDeath);
-        gameController.GetComponent<GameController>().enemiesKilled += 1;
-        Destroy (gameObject);
     }
 }

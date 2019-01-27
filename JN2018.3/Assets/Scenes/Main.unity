@@ -1740,10 +1740,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
-    - target: {fileID: 9115115278784243312, guid: d339807d91edd6843859653a2f80cc3d,
+    - target: {fileID: 2422539285186460971, guid: d339807d91edd6843859653a2f80cc3d,
         type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422539285346900558, guid: d339807d91edd6843859653a2f80cc3d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115115279163748704, guid: d339807d91edd6843859653a2f80cc3d,
+        type: 3}
+      propertyPath: spawnTimeMin
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115115279163748704, guid: d339807d91edd6843859653a2f80cc3d,
+        type: 3}
+      propertyPath: spawnTimeMax
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d339807d91edd6843859653a2f80cc3d, type: 3}

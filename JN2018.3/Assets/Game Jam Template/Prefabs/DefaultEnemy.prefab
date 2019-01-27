@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1547187766407705266}
   - component: {fileID: 2869229785365737271}
   - component: {fileID: 2498797056482482403}
+  - component: {fileID: 5061820338302431080}
   m_Layer: 10
   m_Name: DefaultEnemy
   m_TagString: DefaultEnemy
@@ -155,7 +156,7 @@ MonoBehaviour:
   escapeTarget: {fileID: 0}
   gameController: {fileID: 0}
   loot: {fileID: 9167258195716223921, guid: 5b21646e6d3ba0847845ea8b58188b26, type: 3}
-  rig: {fileID: 0}
+  rig: {fileID: 8749064229507892641}
   audioPlayer: {fileID: 2498797056482482403}
   smackScream:
   - {fileID: 8300000, guid: 618c21fa92dce664eb6426a0c3673b0e, type: 3}
@@ -288,9 +289,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &5061820338302431080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547187766407705259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a67fc3a6ef147194aa8945ad9facdc11, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &8749064229500480079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: a67fc3a6ef147194aa8945ad9facdc11,
+    type: 3}
+  m_PrefabInstance: {fileID: 8749064229500612801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8749064229507892641 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: a67fc3a6ef147194aa8945ad9facdc11,
     type: 3}
   m_PrefabInstance: {fileID: 8749064229500612801}
   m_PrefabAsset: {fileID: 0}

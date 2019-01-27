@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
 
     public void UpdateTimerUI()
     {
-        print("timer up");
+        //print("timer up");
         //set timer UI
         secondsCount += Time.deltaTime;
         timerText.text = hourCount + "h:" + minuteCount + "m:" + (int)secondsCount + "s";
