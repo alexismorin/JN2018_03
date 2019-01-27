@@ -18,6 +18,8 @@ public class GameController : MonoBehaviour
     public int hourCount;
 
     public GameObject princess;
+    public Transform princessTarget;
+    public float princessSpeed = 1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,7 @@ public class GameController : MonoBehaviour
         loot = startingLoot;
         enemiesKilled = 0;
         secondsCount = 0.0f;
+        princessTarget.position = princess.transform.position;
     }
 
     // Update is called once per frame
@@ -46,12 +49,17 @@ public class GameController : MonoBehaviour
         }
 
         UpdateTimerUI();
+
+        float step = princessSpeed * Time.deltaTime; // calculate distance to move
+        princess.transform.position = Vector3.MoveTowards(princess.transform.position, princessTarget.position, step);
     }
 
     public void LootChange(int change)
     {
         loot = loot + change;
-        princess.transform.Translate(0, change, 0);
+        princessTarget.Translate(0,change,0);
+
+        //princess.transform.Translate(0, change/10, 0);
     }
 
     public void UpdateTimerUI()

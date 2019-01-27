@@ -5074,6 +5074,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2797493638334608104}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &5320126321777708027 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5320126321777708027, guid: 9136a1e4ef7cc2b44bb856451bcbfbee,
+    type: 3}
+  m_PrefabInstance: {fileID: 2797493638334608104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6998552983875396449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5153,6 +5159,14 @@ PrefabInstance:
       propertyPath: princess
       value: 
       objectReference: {fileID: 2797493638334608105}
+    - target: {fileID: 1165299994, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
+      propertyPath: princessLevel
+      value: 
+      objectReference: {fileID: 5320126321777708027}
+    - target: {fileID: 1165299994, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
+      propertyPath: princessTarget
+      value: 
+      objectReference: {fileID: 5320126321777708027}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
 --- !u!1001 &9115115278438674963
