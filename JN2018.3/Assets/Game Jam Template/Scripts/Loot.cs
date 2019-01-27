@@ -8,8 +8,9 @@ public class Loot : MonoBehaviour
     public GameObject gameController;
     public int lootValue = 0;
 
-    public AudioClip collect;
-    AudioSource audioSource;
+    public AudioSource audioSource;
+    //public AudioClip drop;
+    //public AudioClip collect;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +33,9 @@ public class Loot : MonoBehaviour
         //Hit by player
         if (collision.gameObject.tag == "PlayerCollider")
         {
-            print("Loot returned");
+            //print("Loot returned");
 
-            audioSource.PlayOneShot(collect,1.0f);
+            ///audioSource.PlayOneShot(collect,1.0f);
             gameController.GetComponent<GameController>().LootChange(lootValue);
 
             Destroy(gameObject);
