@@ -20,6 +20,10 @@ public class GameOver : MonoBehaviour
         secondsCount = PlayerPrefs.GetFloat("secondsCount", 0.0f);
         minuteCount = PlayerPrefs.GetInt("minuteCount", 0);
         hourCount = PlayerPrefs.GetInt("hourCount", 0);
+
+        killText.text = enemiesKilled + "\n Slimes Smushed";
+        timerText.text = "Lasted\n" + hourCount + "h:" + minuteCount + "m:" + (int)secondsCount + "s";
+
     }
 
     // Update is called once per frame
