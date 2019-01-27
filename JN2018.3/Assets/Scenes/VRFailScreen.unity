@@ -5500,6 +5500,10 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1165299996, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bbcf8e7decc1e124dbf25a4d40cf4648, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
 --- !u!1001 &321874803
