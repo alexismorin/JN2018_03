@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9167258195716223923}
   - component: {fileID: 9167258195716223920}
   - component: {fileID: 1773776064221248202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Loot
   m_TagString: DefaultLoot
   m_Icon: {fileID: 0}

@@ -52,7 +52,10 @@ public class Enemy : MonoBehaviour {
         if (collision.gameObject.tag == "PlayerCollider" && collision.relativeVelocity.magnitude > smackForce) {
             print ("SMACK");
 
-            DropLoot ();
+            if (hasLoot)
+            {
+                DropLoot();
+            }
 
             Destroy (aiController);
 
@@ -80,6 +83,7 @@ public class Enemy : MonoBehaviour {
             //Escape
             Destroy (gameObject);
         } else if (other.gameObject.tag == "KillZone") {
+            gameController.GetComponent<GameController>().enemiesKilled += 1;
             Destroy (gameObject);
         }
     }
@@ -93,6 +97,7 @@ public class Enemy : MonoBehaviour {
 
     IEnumerator DeathTimer () {
         yield return new WaitForSeconds (timeToDeath);
+        gameController.GetComponent<GameController>().enemiesKilled += 1;
         Destroy (gameObject);
     }
 }
