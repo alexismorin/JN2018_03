@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &8749064229500480079 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400014, guid: a67fc3a6ef147194aa8945ad9facdc11,
-    type: 3}
-  m_PrefabInstance: {fileID: 8749064229500612801}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8749064229507892641 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: a67fc3a6ef147194aa8945ad9facdc11,
-    type: 3}
-  m_PrefabInstance: {fileID: 8749064229500612801}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1547187766407705259
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,6 +15,7 @@ GameObject:
   - component: {fileID: 1547187766407705269}
   - component: {fileID: 1547187766407705268}
   - component: {fileID: 1547187766407705266}
+  - component: {fileID: 5061820338302431080}
   - component: {fileID: 2869229785365737271}
   - component: {fileID: 2498797056482482403}
   m_Layer: 10
@@ -182,6 +171,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5bca1877bab127148b180131eb65d28b, type: 3}
   - {fileID: 8300000, guid: 10dcca6bbf564954d976921f4cbaf8d5, type: 3}
   aiController: {fileID: 2869229785365737271}
+--- !u!95 &5061820338302431080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547187766407705259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a67fc3a6ef147194aa8945ad9facdc11, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!195 &2869229785365737271
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -300,6 +308,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &8749064229500480079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400014, guid: a67fc3a6ef147194aa8945ad9facdc11,
+    type: 3}
+  m_PrefabInstance: {fileID: 8749064229500612801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8749064229507892641 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: a67fc3a6ef147194aa8945ad9facdc11,
+    type: 3}
+  m_PrefabInstance: {fileID: 8749064229500612801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8749064229500612801
 PrefabInstance:
   m_ObjectHideFlags: 0
