@@ -31520,7 +31520,7 @@ PrefabInstance:
     - target: {fileID: 1547187766407705265, guid: 887b618771717f14e8deafff0912d013,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 9.62
       objectReference: {fileID: 0}
     - target: {fileID: 1547187766407705265, guid: 887b618771717f14e8deafff0912d013,
         type: 3}
@@ -31571,6 +31571,24 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Menu_StartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905932794, guid: 887b618771717f14e8deafff0912d013, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5461683
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905932794, guid: 887b618771717f14e8deafff0912d013, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2619158
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547187766407705269, guid: 887b618771717f14e8deafff0912d013,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547187766407705269, guid: 887b618771717f14e8deafff0912d013,
+        type: 3}
+      propertyPath: m_Drag
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 887b618771717f14e8deafff0912d013, type: 3}
