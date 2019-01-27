@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1547187766407705259, guid: 256df1b310c1ff242ac233c98f9de8c9, type: 3}
+  basic: {fileID: 1547187766407705259, guid: 256df1b310c1ff242ac233c98f9de8c9, type: 3}
+  knight: {fileID: 1547187766407705259, guid: 06b4b8f62466b4c49806986db2218a26, type: 3}
+  knightChance: 0.2
   spawnCentre: {fileID: 6909071207433771150}
   escapeTarget: {fileID: 8980291590390833290}
   spawnTimeMin: 0.5

@@ -2015,6 +2015,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: 9115115279163748704, guid: d339807d91edd6843859653a2f80cc3d,
+        type: 3}
+      propertyPath: spawnTimeMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115115279163748704, guid: d339807d91edd6843859653a2f80cc3d,
+        type: 3}
+      propertyPath: spawnTimeMax
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d339807d91edd6843859653a2f80cc3d, type: 3}
 --- !u!1001 &9167258195811437013

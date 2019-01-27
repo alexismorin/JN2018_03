@@ -6,6 +6,11 @@ public class EnemySpawner : MonoBehaviour
 {
     //Variables
     public GameObject enemy;
+
+    public GameObject basic;
+    public GameObject knight;
+    public float knightChance = 0.2f;
+
     public GameObject spawnCentre;
     public GameObject escapeTarget;
     public float spawnTimeMin = 5.0f;
@@ -25,6 +30,15 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
+        if (Random.value > 1 - knightChance)
+        {
+            enemy = knight;
+        }
+        else
+        {
+            enemy = basic;
+        }
+
         Vector3 position = new Vector3(spawnCentre.transform.position.x + Random.Range(-5.0f, 5.0f), spawnCentre.transform.position.y, spawnCentre.transform.position.z + Random.Range(-5.0f, 5.0f));
         GameObject newEnemy = Instantiate(enemy, position, Quaternion.identity);
         newEnemy.GetComponent<Enemy>().escapeTarget = escapeTarget.transform;
