@@ -796,7 +796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624511910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.84, y: 16.88, z: 4.65}
+  m_LocalPosition: {x: -26.84, y: 26, z: 4.65}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1556,6 +1556,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700525757}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1859359483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2797493637761437234, guid: 9136a1e4ef7cc2b44bb856451bcbfbee,
+    type: 3}
+  m_PrefabInstance: {fileID: 2797493638334608104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1873381681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1799,7 +1805,7 @@ PrefabInstance:
     - target: {fileID: 2797493637761437242, guid: 9136a1e4ef7cc2b44bb856451bcbfbee,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.88
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 2797493637761437242, guid: 9136a1e4ef7cc2b44bb856451bcbfbee,
         type: 3}
@@ -1946,6 +1952,10 @@ PrefabInstance:
       propertyPath: princessTarget
       value: 
       objectReference: {fileID: 624511911}
+    - target: {fileID: 1165299994, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
+      propertyPath: cageDoor
+      value: 
+      objectReference: {fileID: 1859359483}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
 --- !u!1001 &9115115278438674963

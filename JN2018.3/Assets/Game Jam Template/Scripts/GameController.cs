@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
 
     public GameObject princess;
     public Transform princessTarget;
+    public Transform cageDoor;
     public float princessSpeed = 1.0f;
 
     // Start is called before the first frame update
@@ -39,16 +40,20 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
-        if(loot == 0)
+        if(loot <= 0)
         {
+            //StartCoroutine(GameOver());
             PlayerPrefs.SetInt("enemiesKilled", enemiesKilled);
             PlayerPrefs.SetFloat("secondsCount", secondsCount);
             PlayerPrefs.SetInt("minuteCount", minuteCount);
             PlayerPrefs.SetInt("hourCount", hourCount);
+
             SceneManager.LoadScene(2);
         }
 
         UpdateTimerUI();
+
+        princessTarget.position = new Vector3(princessTarget.position.x, (loot/5.0f)+6.0f, princessTarget.position.z);
 
         float step = princessSpeed * Time.deltaTime; // calculate distance to move
         princess.transform.position = Vector3.MoveTowards(princess.transform.position, princessTarget.position, step);
@@ -57,7 +62,7 @@ public class GameController : MonoBehaviour
     public void LootChange(int change)
     {
         loot = loot + change;
-        princessTarget.Translate(0,change/10,0);
+        //princessTarget.Translate(0,change/10,0);
 
         //princess.transform.Translate(0, change/10, 0);
     }
@@ -79,4 +84,29 @@ public class GameController : MonoBehaviour
             minuteCount = 0;
         }
     }
+
+    public void EndingCinematic()
+    {
+        Transform cageDoor = princess.transform.Find("PivotPorte");
+        cageDoor.Rotate(0, 0, -180.0f);
+
+    }
+
+    
+
+    IEnumerator GameOver()
+    {
+        
+        //cageDoor.Rotate(0, 0, -180.0f);
+
+        PlayerPrefs.SetInt("enemiesKilled", enemiesKilled);
+        PlayerPrefs.SetFloat("secondsCount", secondsCount);
+        PlayerPrefs.SetInt("minuteCount", minuteCount);
+        PlayerPrefs.SetInt("hourCount", hourCount);
+        
+        yield return new WaitForSeconds(0);
+
+        SceneManager.LoadScene(2);
+    }
+
 }
