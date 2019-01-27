@@ -34,6 +34,15 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
+        if(loot == 0)
+        {
+            PlayerPrefs.SetInt("enemiesKilled", enemiesKilled);
+            PlayerPrefs.SetFloat("secondsCount", secondsCount);
+            PlayerPrefs.SetInt("minuteCount", minuteCount);
+            PlayerPrefs.SetInt("hourCount", hourCount);
+            SceneManager.LoadScene(2);
+        }
+
         UpdateTimerUI();
     }
 
