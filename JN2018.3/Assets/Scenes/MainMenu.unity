@@ -478,6 +478,53 @@ PrefabInstance:
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8286744, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cb18ab18f053f454a8362b619d748b8e, type: 3}
+    - target: {fileID: 11467570, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1671ee59a06405c43906a3826cf42cf2,
+        type: 3}
+    - target: {fileID: 11467570, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_Text
+      value: Home is where the hoard is
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448812, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1671ee59a06405c43906a3826cf42cf2,
+        type: 3}
+    - target: {fileID: 11403680, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1671ee59a06405c43906a3826cf42cf2,
+        type: 3}
+    - target: {fileID: 114484449128214796, guid: 45616935e4fe10f48b62da1347801a16,
+        type: 3}
+      propertyPath: useMainFont
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114021890999685364, guid: 45616935e4fe10f48b62da1347801a16,
+        type: 3}
+      propertyPath: useMainFont
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114100183221875832, guid: 45616935e4fe10f48b62da1347801a16,
+        type: 3}
+      propertyPath: useMainFont
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422814, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1671ee59a06405c43906a3826cf42cf2,
+        type: 3}
+    - target: {fileID: 8286744, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
 --- !u!20 &600557488 stripped
