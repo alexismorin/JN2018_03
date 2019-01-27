@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 28062302abac3194b8e9ecaec5313176
+  - enabled: 1
+    path: Assets/Scenes/VRFailScreen.unity
+    guid: 101e4ae3588a3cd4da70f9c797f09bb0
   m_configObjects: {}
