@@ -96,6 +96,7 @@ public class Enemy : MonoBehaviour {
 
     IEnumerator DeathTimer () {
         yield return new WaitForSeconds (timeToDeath);
+        gameController.GetComponent<GameController>().enemiesKilled++;
         Destroy (gameObject);
     }
 }
