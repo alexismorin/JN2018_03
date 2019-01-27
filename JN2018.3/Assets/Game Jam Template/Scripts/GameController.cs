@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
     public void LootChange(int change)
     {
         loot = loot + change;
-        princessTarget.Translate(0,change,0);
+        princessTarget.Translate(0,change/10,0);
 
         //princess.transform.Translate(0, change/10, 0);
     }
