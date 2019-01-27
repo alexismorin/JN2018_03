@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     public int minuteCount;
     public int hourCount;
 
+    public GameObject princess;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,7 @@ public class GameController : MonoBehaviour
     public void LootChange(int change)
     {
         loot = loot + change;
+        princess.transform.Translate(0, change, 0);
     }
 
     public void UpdateTimerUI()
