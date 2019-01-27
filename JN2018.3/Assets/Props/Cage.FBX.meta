@@ -16,6 +16,7 @@ ModelImporter:
     400008: PivotPorte
     400010: PognerPorte
     2100000: No Name
+    2100002: lambert1
     2300000: Cage
     2300002: CagePorte
     2300004: Chainons
@@ -25,7 +26,12 @@ ModelImporter:
     4300000: Cage
     4300002: Chainons
     4300004: CagePorte
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 4d7c58874c8970f4f9a1bf0369b4fce3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
