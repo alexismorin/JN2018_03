@@ -52,9 +52,8 @@ public class Enemy : MonoBehaviour {
         if (collision.gameObject.tag == "PlayerCollider" && collision.relativeVelocity.magnitude > smackForce) {
             print ("SMACK");
 
-            if (hasLoot)
-            {
-                DropLoot();
+            if (hasLoot) {
+                DropLoot ();
             }
 
             Destroy (aiController);
@@ -63,8 +62,8 @@ public class Enemy : MonoBehaviour {
             audioPlayer.PlayOneShot (smackScream[Random.Range (0, smackScream.Length)], 1f);
             rig.SetTrigger ("die");
 
-            gameController.GetComponent<GameController>().enemiesKilled += 1;
-            Destroy(gameObject, timeToDeath);
+            gameController.GetComponent<GameController> ().enemiesKilled += 1;
+            Destroy (gameObject, timeToDeath);
         }
     }
 
@@ -83,17 +82,17 @@ public class Enemy : MonoBehaviour {
             //Escape
             Destroy (gameObject);
         } else if (other.gameObject.tag == "KillZone") {
-            print(gameObject.name + " fell and died");
-            gameController.GetComponent<GameController>().enemiesKilled += 1;
+            print (gameObject.name + " fell and died");
+            gameController.GetComponent<GameController> ().enemiesKilled += 1;
             Destroy (gameObject);
         }
     }
 
     public void DropLoot () {
         //Instantiate loot at current position.
-        print(gameObject.name + " dropped loot");
-        GameObject droppedLoot = Instantiate(loot, gameObject.transform.position, Quaternion.identity);
-        droppedLoot.GetComponent<Loot>().lootValue = lootSteal;
+        print (gameObject.name + " dropped loot");
+        GameObject droppedLoot = Instantiate (loot, gameObject.transform.position, Quaternion.identity);
+        droppedLoot.GetComponent<Loot> ().lootValue = lootSteal;
         hasLoot = false;
     }
 }
