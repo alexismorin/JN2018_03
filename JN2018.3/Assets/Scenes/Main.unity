@@ -1667,39 +1667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 186810923803326554, guid: 2252bddaa3fe51f49a19f09c03a076e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5050912866322747635, guid: 2252bddaa3fe51f49a19f09c03a076e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5050912865891103903, guid: 2252bddaa3fe51f49a19f09c03a076e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6998552984160771465, guid: 2252bddaa3fe51f49a19f09c03a076e7,
-        type: 3}
-      propertyPath: useIPDInPositionTracking
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6998552983456193730, guid: 2252bddaa3fe51f49a19f09c03a076e7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1165299994, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
       propertyPath: timerText
       value: 
       objectReference: {fileID: 404263480}
-    - target: {fileID: 1165299996, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2252bddaa3fe51f49a19f09c03a076e7, type: 3}
 --- !u!1001 &9115115278438674963
