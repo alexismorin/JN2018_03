@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour {
     public Transform escapeTarget;
     public GameObject gameController;
     public GameObject loot;
+    public GameObject lootHat;
 
     public Animator rig;
     public AudioSource audioPlayer;
@@ -73,6 +74,7 @@ public class Enemy : MonoBehaviour {
             print ("stealin yer loot!");
             //Steal loot
             hasLoot = true;
+            lootHat.SetActive(true);
             gameController.GetComponent<GameController> ().LootChange (-lootSteal);
             aiController.destination = escapeTarget.position;
         }
@@ -94,5 +96,6 @@ public class Enemy : MonoBehaviour {
         GameObject droppedLoot = Instantiate (loot, gameObject.transform.position, Quaternion.identity);
         droppedLoot.GetComponent<Loot> ().lootValue = lootSteal;
         hasLoot = false;
+        lootHat.SetActive(false);
     }
 }
